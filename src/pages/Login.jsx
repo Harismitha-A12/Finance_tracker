@@ -22,11 +22,23 @@ export default function Login() {
           <p className="muted">Sign in to continue to FinanceFlow</p>
           <form onSubmit={submit}>
             <label className="label">Email</label>
-            <input className="input" type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+            <input
+              className="input"
+              type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              required
+            />
+
             <label className="label">Password</label>
-            <input className="input" type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
-            <label className="label">Notes (optional)</label>
-            <input className="input" placeholder="Optional note" />
+            <input
+              className="input"
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              required
+            />
+
             <div style={{ marginTop: 12, display: "flex", gap: 10 }}>
               <button className="btn primary" type="submit">Login</button>
               <Link to="/signup" className="btn ghost">Create account</Link>

@@ -10,6 +10,7 @@ export default function TopBar() {
         <Link to="/app/overview">Overview</Link>
         <Link to="/about" style={{ display: "none" }}>About</Link>
         <Link to="/login" className="btn small">Login</Link>
+        <Link to="/signup" className="btn small">Sign Up</Link>
       </nav>
     </header>
   );
